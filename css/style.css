@@ -57,7 +57,6 @@ main {
     width: calc(100% / 7);
 }
 
-
 .cell.active {
     background-color: lightseagreen;
 }
