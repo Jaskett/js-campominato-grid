@@ -15,33 +15,48 @@ header {
     align-items: center;
 }
 
-.container {
+main {
+    height: 85vh;
+    background-color: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
-    height: 80vh;
 }
 
-.grid {
-    --sidesquare: 10;
+.grid-container {
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    width: 550px;
-    height: 550px;
-    border: 2px solid black;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
 }
 
 .cell {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100% / var(--sidesquare));
-    width: calc(100% / var(--sidesquare));
-    border: 2px solid black;
+    border: 1px solid black;
     cursor: pointer;
 }
+
+.cell.easy {
+    height: calc(100% / 10);
+    width: calc(100% / 10);
+}
+
+.cell.medium {
+    height: calc(100% / 9);
+    width: calc(100% / 9);
+}
+
+.cell.hard {
+    height: calc(100% / 7);
+    width: calc(100% / 7);
+}
+
 
 .cell.active {
     background-color: lightseagreen;
